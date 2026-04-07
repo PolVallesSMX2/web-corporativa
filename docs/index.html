@@ -11,13 +11,13 @@
 </head>
 <body>
 
+    <!-- Contenidor de partícules fix per a tota la web -->
     <div id="particles-js"></div>
 
     <header>
         <nav class="container">
             <div class="logo">
                 <a href="#inici">
-                    <!-- Ruta corregida segons la teva estructura /docs/img/ -->
                     <img src="img/logo.png" alt="FoodLogistic Logo" class="logo-img">
                 </a>
             </div>
@@ -42,7 +42,6 @@
             <div class="scan-line"></div>
         </section>
 
-        <!-- NOVA SECCIÓ: GALERIA D'IMATGES (ESTIL STORIES) -->
         <section id="galeria" class="container">
             <p class="gallery-tagline">A Journey Through Visual Logistics</p>
             <h2 class="section-title">Welcome to Our <span class="text-accent">Stories</span></h2>
@@ -55,7 +54,7 @@
                     <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=400" alt="Cold Chain">
                 </div>
                 <div class="photo-card" style="--order: 2; --x: 0px; --y: 8px; --rot: -2deg;">
-                    <img src="img/logo.png" alt="Drone Delivery">
+                    <img src="img/logo.png" alt="FoodLogistic Core">
                 </div>
                 <div class="photo-card" style="--order: 3; --x: 160px; --y: 22px; --rot: 3deg;">
                     <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=400" alt="Quality Control">
@@ -70,7 +69,6 @@
             </div>
         </section>
 
-        <!-- FORMULARI DE CONTACTE -->
         <section id="contacte" class="contact container">
             <h2 class="section-title">CONNEXIÓ DIRECTA</h2>
             <div class="contact-wrapper glass">
@@ -107,13 +105,21 @@
     <script>
         particlesJS("particles-js", {
             "particles": {
-                "number": { "value": 80 },
+                "number": { "value": 100, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#00ffff" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.5 },
-                "size": { "value": 3 },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
                 "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.2, "width": 1 },
-                "move": { "enable": true, "speed": 2 }
+                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { 
+                    "onhover": { "enable": true, "mode": "grab" }, 
+                    "onclick": { "enable": true, "mode": "push" } 
+                },
+                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
             },
             "retina_detect": true
         });
