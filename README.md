@@ -4,7 +4,7 @@ Aquesta és la web corporativa de FoodLogístic, una empresa fictícia dedicada 
 
 ## Demostració
 
-[🌐 URL de la web](https://github.com/PolVallesSMX2/web-corporativa)
+[🌐 URL de la web](https://polvallessmx2.github.io/web-corporativa/)
 
 ## Tecnologies Utilitzades
 
