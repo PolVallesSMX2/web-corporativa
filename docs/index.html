@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOODLOGISTIC | Future Supply Chain</title>
+    <title>FOODLOGISTIC | Premium Future Supply</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,9 @@
 </head>
 <body>
 
-    <!-- Contenidor de partícules fix per a tota la web -->
+    <!-- EFECTES DE DISSENY PREMIUM -->
+    <div class="noise"></div>
+    <div class="cursor-follower"></div>
     <div id="particles-js"></div>
 
     <header>
@@ -23,7 +25,6 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#inici" class="nav-item">Inici</a></li>
-                <li><a href="#serveis" class="nav-item">Serveis</a></li>
                 <li><a href="#galeria" class="nav-item">Galeria</a></li>
                 <li><a href="#contacte" class="nav-item btn-neon">Contacte</a></li>
             </ul>
@@ -33,95 +34,92 @@
     <main>
         <section id="inici" class="hero">
             <div class="hero-content container">
-                <h1 class="glitch" data-text="FOODLOGISTIC">FOODLOGISTIC</h1>
-                <p class="subtitle">La revolució de la cadena de fred intel·ligent i el transport quàntic.</p>
+                <h1 class="hero-title">FOODLOGISTIC</h1>
+                <p class="subtitle">Logística quàntica per a una era hiperconnectada.</p>
                 <div class="hero-btns">
-                    <a href="#galeria" class="btn-main">Veure Experiència</a>
+                    <a href="#galeria" class="btn-main">EXPLORAR SISTEMA</a>
                 </div>
             </div>
             <div class="scan-line"></div>
         </section>
 
+        <!-- SECCIÓ GALERIA ESTIL STORIES -->
         <section id="galeria" class="container">
-            <p class="gallery-tagline">A Journey Through Visual Logistics</p>
-            <h2 class="section-title">Welcome to Our <span class="text-accent">Stories</span></h2>
+            <p class="gallery-tagline">Visual Logistics Journey</p>
+            <h2 class="section-title">Nostres <span class="text-accent">Stories</span></h2>
             
             <div class="gallery-container">
-                <div class="photo-card" style="--order: 0; --x: -320px; --y: 15px; --rot: -4deg;">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Warehouse Tech">
+                <div class="photo-card" style="--x: -320px; --y: 15px; --rot: -4deg;">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Tech">
                 </div>
-                <div class="photo-card" style="--order: 1; --x: -160px; --y: 32px; --rot: 2deg;">
+                <div class="photo-card" style="--x: -160px; --y: -10px; --rot: 2deg;">
                     <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=400" alt="Cold Chain">
                 </div>
-                <div class="photo-card" style="--order: 2; --x: 0px; --y: 8px; --rot: -2deg;">
-                    <img src="img/logo.png" alt="FoodLogistic Core">
+                <div class="photo-card" style="--x: 0px; --y: 10px; --rot: -2deg;">
+                    <!-- Aquí també pots posar el logo si vols que surti a la galeria -->
+                    <img src="img/logo.png" alt="Core Logo">
                 </div>
-                <div class="photo-card" style="--order: 3; --x: 160px; --y: 22px; --rot: 3deg;">
-                    <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=400" alt="Quality Control">
+                <div class="photo-card" style="--x: 160px; --y: -5px; --rot: 3deg;">
+                    <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=400" alt="Control">
                 </div>
-                <div class="photo-card" style="--order: 4; --x: 320px; --y: 44px; --rot: -3deg;">
-                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=400" alt="Data Logistics">
+                <div class="photo-card" style="--x: 320px; --y: 20px; --rot: -3deg;">
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=400" alt="Data">
                 </div>
-            </div>
-            
-            <div class="gallery-footer">
-                <button class="btn-submit-neon" style="max-width: 300px;">View All Logistics</button>
             </div>
         </section>
 
+        <!-- CONTACTE -->
         <section id="contacte" class="contact container">
-            <h2 class="section-title">CONNEXIÓ DIRECTA</h2>
             <div class="contact-wrapper glass">
+                <h2 class="section-title">Connexió</h2>
                 <form class="contact-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="nom">Nom</label>
-                            <input type="text" id="nom" required>
+                            <label>Identificador</label>
+                            <input type="text" placeholder="Nom complet" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <label>Canal de Resposta</label>
+                            <input type="email" placeholder="Email corporatiu" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="telefon">Telèfon</label>
-                        <input type="tel" id="telefon">
+                        <label>Transmissió de dades</label>
+                        <textarea placeholder="Escriu el teu missatge..." rows="3"></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="missatge">Missatge</label>
-                        <textarea id="missatge" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit-neon">Enviar Transmissió</button>
+                    <button type="submit" class="btn-submit-neon">ENVIAR TRANSMISSIÓ</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 FOODLOGISTIC S.A. | Desenvolupat per [El teu nom]</p>
+        <p>&copy; 2026 FOODLOGISTIC S.A. | Protocol de Seguretat Actiu</p>
     </footer>
 
+    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
+        // Partícules fixes de fons
         particlesJS("particles-js", {
             "particles": {
                 "number": { "value": 100, "density": { "enable": true, "value_area": 800 } },
                 "color": { "value": "#00ffff" },
                 "shape": { "type": "circle" },
-                "opacity": { "value": 0.5, "random": true },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.2, "width": 1 },
-                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+                "opacity": { "value": 0.3 },
+                "size": { "value": 2, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.1, "width": 1 },
+                "move": { "enable": true, "speed": 1.5 }
             },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": { 
-                    "onhover": { "enable": true, "mode": "grab" }, 
-                    "onclick": { "enable": true, "mode": "push" } 
-                },
-                "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } }
-            },
+            "interactivity": { "events": { "onhover": { "enable": true, "mode": "grab" } } },
             "retina_detect": true
+        });
+
+        // Cursor interactiu (21st Style)
+        const follower = document.querySelector('.cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
         });
     </script>
 </body>
