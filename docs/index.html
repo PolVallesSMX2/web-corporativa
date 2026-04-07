@@ -3,82 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Corporativa | FoodLogístic</title>
+    <title>FOODLOGISTIC | Smart Food Supply Chain</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div id="particles-js"></div>
+
     <header>
-        <nav>
-            <div class="logo">La Meva Empresa</div>
-            <ul>
-                <li><a href="#inici">Inici</a></li>
-                <li><a href="#serveis">Serveis</a></li>
-                <li><a href="#sobre-nosaltres">Sobre nosaltres</a></li>
-                <li><a href="#contacte">Contacte</a></li>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-text">FOOD<span class="dot">LOGISTIC</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inici" class="nav-item">Inici</a></li>
+                <li><a href="#serveis" class="nav-item">Serveis</a></li>
+                <li><a href="#sobre-nosaltres" class="nav-item">Nosaltres</a></li>
+                <li><a href="#contacte" class="nav-item btn-neon">Connexió</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inici" class="hero">
-        <div class="hero-content">
-            <h1>Benvinguts a FoodLogístic</h1>
-            <p>Solucions innovadores per al teu negoci en el sector de [El teu sector].</p>
-        </div>
-    </section>
+    <main>
+        <section id="inici" class="hero">
+            <div class="hero-content container">
+                <h1 class="glitch" data-text="L'ALIMENTACIÓ DEL FUTUR">L'ALIMENTACIÓ DEL FUTUR</h1>
+                <p class="subtitle">Logística intel·ligent i distribució quàntica per a la cadena de subministrament global de FoodLogistic.</p>
+                <div class="hero-btns">
+                    <a href="#serveis" class="btn-main">Sistemes de Distribució</a>
+                </div>
+            </div>
+            <div class="scan-line"></div>
+        </section>
 
-    <section id="serveis" class="container">
-        <h2>Els Nostres Serveis</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Servei 1</h3>
-                <p>Descripció detallada del primer servei que ofereix l'empresa.</p>
+        <section id="serveis" class="services container">
+            <h2 class="section-title">SERVEIS LOGÍSTICS 4.0</h2>
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <div class="icon">❄️</div>
+                    <h3>Cadena de Fred IA</h3>
+                    <p>Monitorització termogràfica en temps real mitjançant sensors neuronals per garantir la frescor absoluta.</p>
+                    <span class="status">Actiu</span>
+                </div>
+                <div class="service-card glass">
+                    <div class="icon">🚚</div>
+                    <h3>Flota Autònoma</h3>
+                    <p>Vehicles de repartiment sense conductor optimitzats per algorismes de rutes predictives.</p>
+                    <span class="status">Actiu</span>
+                </div>
+                <div class="service-card glass">
+                    <div class="icon">📊</div>
+                    <h3>Stock Predictiu</h3>
+                    <p>Anàlisi de dades massives per anticipar la demanda abans que es produeixi el consum.</p>
+                    <span class="status">Sincronitzant</span>
+                </div>
             </div>
-            <div class="card">
-                <h3>Servei 2</h3>
-                <p>Descripció detallada del segon servei que ofereix l'empresa.</p>
-            </div>
-            <div class="card">
-                <h3>Servei 3</h3>
-                <p>Descripció detallada del tercer servei que ofereix l'empresa.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="sobre-nosaltres" class="bg-light">
-        <div class="container">
-            <h2>Sobre nosaltres</h2>
-            <p>Som una empresa dedicada a oferir la millor qualitat des de fa anys. El nostre equip està format per professionals del sector que busquen l'excel·lència en cada projecte.</p>
-        </div>
-    </section>
+        <section id="sobre-nosaltres" class="about">
+            <div class="container about-wrapper glass">
+                <div class="about-text">
+                    <h2 class="section-title-left">SOBRE FOODLOGISTIC</h2>
+                    <p>Som líders en la revolució del transport d'aliments. A FoodLogistic combinat la precisió de la robòtica amb el respecte pel producte d'origen.</p>
+                    <p>La nostra xarxa global garanteix que cap recurs es perdi, optimitzant el lliurament des de la granja vertical fins a la taula del consumidor final en temps rècord.</p>
+                </div>
+                <div class="about-viz">
+                    <div class="viz-circle"></div>
+                    <div class="viz-line"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contacte" class="container">
-        <h2>Contacte</h2>
-        <p>Si tens qualsevol dubte, omple el següent formulari:</p>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
+        <section id="contacte" class="contact container">
+            <h2 class="section-title">CONTACTE CORPORATIU</h2>
+            <div class="contact-wrapper glass">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom del Client</label>
+                            <input type="text" id="nom" name="nom" required placeholder="Ex: Nexus Corp">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correu Electrònic</label>
+                            <input type="email" id="email" name="email" required placeholder="contacte@empresa.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telèfon de Contacte</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+34 900 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label for="missatge">Missatge / Sol·licitud</label>
+                        <textarea id="missatge" name="missatge" rows="5" required placeholder="Escriu la teva consulta logística..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit-neon">Enviar Transmissió</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="email">Correu electrònic:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="telefon">Telèfon de contacte:</label>
-                <input type="tel" id="telefon" name="telefon">
-            </div>
-            <div class="form-group">
-                <label for="missatge">Missatge:</label>
-                <textarea id="missatge" name="missatge" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 FoodLogístic - Creat per [El teu nom]</p>
+        <div class="container footer-content">
+            <p>&copy; 2026 FOODLOGISTIC S.A. - TOTS ELS DRETS RESERVATS.</p>
+            <p>Infraestructura Cloud protegida. Desenvolupat per [El teu nom].</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 100, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00ffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 2, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.2, "width": 1 },
+                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+            },
+            "retina_detect": true
+        });
+    </script>
 
     <!-- Default Statcounter code for WebCorporativa
     https://polvallessmx2.github.io/web-corporativa -->
