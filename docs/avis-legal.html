@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"><title>Avís Legal | FOODLOGISTIC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-follower"></div><div class="noise"></div><div id="particles-js"></div>
+    <header><nav class="container nav-wrapper"><div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo-img"></a></div><ul class="nav-links"><li><a href="index.html" class="nav-item">Tornar al Terminal</a></li></ul></nav></header>
+    <main class="legal-body container">
+        <div class="glass legal-text">
+            <h1 class="section-title">AVÍS <span class="text-accent-neon">LEGAL</span></h1>
+            <h2>1. Dades Identificatives</h2>
+            <p>En compliment de l'article 10 de la Llei 34/2002, de l'11 de juliol, de serveis de la societat de la informació i de comerç electrònic:</p>
+            <ul>
+                <li><strong>Titular:</strong> FOODLOGISTIC S.A.</li>
+                <li><strong>NIF:</strong> A-08123456</li>
+                <li><strong>Adreça:</strong> Carrer de la Tecnologia 42, 08302 Mataró.</li>
+                <li><strong>Registre:</strong> Mercantil de Barcelona, Tom 123, Foli 45, Full 678.</li>
+            </ul>
+            <h2>2. Propietat Intel·lectual</h2>
+            <p>Tots els continguts d'aquesta interfície (codi, disseny, logotips) són propietat exclusiva de FoodLogistic S.A. Queda prohibida la reproducció total o parcial sense autorització expressa sota protocol de seguretat.</p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {"particles":{"number":{"value":40},"color":{"value":"#00ffff"},"size":{"value":1},"line_linked":{"enable":true,"opacity":0.05},"move":{"speed":0.5}}});
+        const follower = document.querySelector('.cursor-follower');
+        document.addEventListener('mousemove', (e) => { follower.style.left = e.clientX + 'px'; follower.style.top = e.clientY + 'px'; });
+    </script>
+</body>
+</html>

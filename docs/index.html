@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOODLOGISTIC | Premium Future Supply</title>
+    <title>FOODLOGISTIC | Quantum Food Supply</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- EFECTES DE DISSENY PREMIUM -->
-    <div class="noise"></div>
     <div class="cursor-follower"></div>
+    <div class="noise"></div>
     <div id="particles-js"></div>
 
     <header>
-        <nav class="container">
-            <div class="logo">
-                <a href="#inici">
-                    <img src="img/logo.png" alt="FoodLogistic Logo" class="logo-img">
-                </a>
-            </div>
+        <nav class="container nav-wrapper">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo-img"></a></div>
             <ul class="nav-links">
                 <li><a href="#inici" class="nav-item">Inici</a></li>
-                <li><a href="#galeria" class="nav-item">Galeria</a></li>
-                <li><a href="#contacte" class="nav-item btn-neon">Contacte</a></li>
+                <li><a href="#empresa" class="nav-item">Sistema</a></li>
+                <li><a href="#galeria" class="nav-item">Visuals</a></li>
+                <li><a href="#contacte" class="nav-item btn-nav-neon">Contacte</a></li>
             </ul>
         </nav>
     </header>
@@ -35,92 +29,109 @@
         <section id="inici" class="hero">
             <div class="hero-content container">
                 <h1 class="hero-title">FOODLOGISTIC</h1>
-                <p class="subtitle">Logística quàntica per a una era hiperconnectada.</p>
-                <div class="hero-btns">
-                    <a href="#galeria" class="btn-main">EXPLORAR SISTEMA</a>
-                </div>
+                <p class="subtitle">L'evolució intel·ligent del subministrament alimentari.</p>
+                <div style="margin-top: 3rem;"><a href="#empresa" class="btn-main" style="width: auto; display: inline-block;">EXPLORAR PROTOCOL</a></div>
             </div>
             <div class="scan-line"></div>
         </section>
 
-        <!-- SECCIÓ GALERIA ESTIL STORIES -->
-        <section id="galeria" class="container">
-            <!--<p class="gallery-tagline">Visual Logistics Journey</p>-->
-            <h2 class="section-title">Nostres <span class="text-accent">Stories</span></h2>
-            
-            <div class="gallery-container">
-                <div class="photo-card" style="--x: -320px; --y: 15px; --rot: -4deg;">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Tech">
+        <section id="empresa" class="container" style="padding: 100px 0;">
+            <div class="glass" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div>
+                    <h2 class="section-title">La Nova Era de l'<span class="text-accent-neon">Alimentació</span></h2>
+                    <p style="font-size: 1.2rem; color: #ccc; margin-bottom: 1.5rem;">
+                        A FoodLogistic S.A. no només transportem productes; gestionem el flux vital del sector alimentari mitjançant tecnologia de xarxa avançada.
+                    </p>
+                    <ul style="list-style: none; color: var(--primary-neon); font-family: var(--font-cyber); font-size: 0.8rem; letter-spacing: 1px;">
+                        <li style="margin-bottom: 10px;">> CONTROL DE TEMPERATURA QUÀNTIC</li>
+                        <li style="margin-bottom: 10px;">> TRAÇABILITAT BLOCKCHAIN TOTAL</li>
+                        <li style="margin-bottom: 10px;">> LOGÍSTICA D'EMISSIÓ ZERO</li>
+                    </ul>
                 </div>
-                <div class="photo-card" style="--x: -160px; --y: -10px; --rot: 2deg;">
-                    <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=400" alt="Cold Chain">
-                </div>
-                <div class="photo-card" style="--x: 0px; --y: 10px; --rot: -2deg;">
-                    <!-- Aquí també pots posar el logo si vols que surti a la galeria -->
-                    <img src="img/logo.png" alt="Core Logo">
-                </div>
-                <div class="photo-card" style="--x: 160px; --y: -5px; --rot: 3deg;">
-                    <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=400" alt="Control">
-                </div>
-                <div class="photo-card" style="--x: 320px; --y: 20px; --rot: -3deg;">
-                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=400" alt="Data">
+                <div style="border-left: 1px solid rgba(0,255,255,0.2); padding-left: 4rem;">
+                    <h3 class="text-accent-neon" style="margin-bottom: 1rem;">MISSIÓ DEL SISTEMA</h3>
+                    <p style="color: #888;">Garantir la integritat de cada nutrient des de l'origen fins al terminal de consum, optimitzant les rutes mitjançant IA per a una eficiència del 99.9%.</p>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACTE -->
+        <section id="galeria" class="container" style="padding: 100px 0; text-align: center;">
+            <h2 class="section-title">Monitoratge <span class="text-accent-neon">Visual</span></h2>
+            <div class="gallery-container">
+                <div class="photo-card" style="--x: -350px; --y: 10px; --rot: -5deg;">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400" alt="Tech">
+                </div>
+                <div class="photo-card" style="--x: -175px; --y: -15px; --rot: 2deg;">
+                    <img src="https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=400" alt="Cold Chain">
+                </div>
+                <div class="photo-card" style="--x: 0px; --y: 5px; --rot: -1deg;">
+                    <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&q=80&w=400" alt="Core">
+                </div>
+                <div class="photo-card" style="--x: 175px; --y: -10px; --rot: 3deg;">
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=400" alt="Control">
+                </div>
+                <div class="photo-card" style="--x: 350px; --y: 15px; --rot: -3deg;">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+            </div>
+        </section>
+
         <section id="contacte" class="contact container">
             <div class="contact-wrapper glass">
-                <h2 class="section-title">Connexió</h2>
+                <h2 class="section-title">Connexió de <span class="text-accent-neon">Dades</span></h2>
                 <form class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Identificador</label>
-                            <input type="text" placeholder="Nom complet" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Canal de Resposta</label>
-                            <input type="email" placeholder="Email corporatiu" required>
-                        </div>
+                    <div class="form-group"><label>NOM COMPLET</label><input type="text" required></div>
+                    <div class="form-group"><label>EMAIL CORPORATIU</label><input type="email" required></div>
+                    <div class="form-group"><label>TERMINAL TELEFÒNIC</label><input type="tel" placeholder="+34" required></div>
+                    <div class="form-group"><label>MISSATGE</label><textarea rows="4"></textarea></div>
+
+                    <div class="legal-checks">
+                        <label class="check-container">
+                            <input type="checkbox" required>
+                            <span>Accepto la <a href="privacitat.html" class="inline-link">Política de Privacitat</a>.</span>
+                        </label>
+                        <label class="check-container">
+                            <input type="checkbox">
+                            <span>Autoritzo comunicacions segons l'<a href="avis-legal.html" class="inline-link">Avís Legal</a>.</span>
+                        </label>
                     </div>
-                    <div class="form-group">
-                        <label>Transmissió de dades</label>
-                        <textarea placeholder="Escriu el teu missatge..." rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit-neon">ENVIAR TRANSMISSIÓ</button>
+                    <button type="submit" class="btn-submit-neon">ENVIAR PROTOCOL</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <div id="cookie-banner" class="cookie-container glass">
+        <div class="cookie-content">
+            <p><span class="text-accent-neon">SISTEMA DE COOKIES:</span> Aquest terminal utilitza galetes. <a href="cookies.html" class="inline-link">Més informació</a>.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="btn-cookie-neon">ACCEPTAR</button>
+                <button id="decline-cookies" class="btn-cookie-sec">REBUTJAR</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2026 FOODLOGISTIC S.A. | Protocol de Seguretat Actiu</p>
+        <div class="container">
+            <p>&copy; 2026 FOODLOGISTIC S.A.</p>
+            <div class="footer-links">
+                <a href="avis-legal.html" class="footer-link">Avís Legal</a>
+                <a href="privacitat.html" class="footer-link">Privacitat</a>
+                <a href="cookies.html" class="footer-link">Cookies</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Partícules fixes de fons
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 100, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#00ffff" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.3 },
-                "size": { "value": 2, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.1, "width": 1 },
-                "move": { "enable": true, "speed": 1.5 }
-            },
-            "interactivity": { "events": { "onhover": { "enable": true, "mode": "grab" } } },
-            "retina_detect": true
-        });
-
-        // Cursor interactiu (21st Style)
+        particlesJS("particles-js", {"particles":{"number":{"value":80},"color":{"value":"#00ffff"},"size":{"value":2},"line_linked":{"enable":true,"color":"#00ffff","opacity":0.1},"move":{"speed":1}}});
         const follower = document.querySelector('.cursor-follower');
-        document.addEventListener('mousemove', (e) => {
-            follower.style.left = e.clientX + 'px';
-            follower.style.top = e.clientY + 'px';
-        });
+        document.addEventListener('mousemove', (e) => { follower.style.left = e.clientX + 'px'; follower.style.top = e.clientY + 'px'; });
+        
+        const banner = document.getElementById('cookie-banner');
+        if(!localStorage.getItem('cookies-ok')) setTimeout(() => banner.classList.add('show'), 1000);
+        document.getElementById('accept-cookies').onclick = () => { localStorage.setItem('cookies-ok', 't'); banner.classList.remove('show'); }
+        document.getElementById('decline-cookies').onclick = () => banner.classList.remove('show');
     </script>
 </body>
 </html>

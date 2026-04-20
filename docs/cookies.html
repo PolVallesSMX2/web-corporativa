@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"><title>Cookies | FOODLOGISTIC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-follower"></div><div class="noise"></div><div id="particles-js"></div>
+    <header><nav class="container nav-wrapper"><div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo-img"></a></div><ul class="nav-links"><li><a href="index.html" class="nav-item">Tornar al Terminal</a></li></ul></nav></header>
+    <main class="legal-body container">
+        <div class="glass legal-text">
+            <h1 class="section-title">POLÍTICA DE <span class="text-accent-neon">COOKIES</span></h1>
+            <p>Utilitzem galetes per millorar l'experiència de navegació de la nostra xarxa:</p>
+            <ul>
+                <li><strong>Cookies Tècniques:</strong> Obligatòries pel funcionament de la interfície.</li>
+                <li><strong>Cookies Analítiques:</strong> Recullen dades anònimes sobre el trànsit de dades corporatiu.</li>
+            </ul>
+            <p>Pots revocar el consentiment en qualsevol moment netejant la memòria cau del teu navegador o mitjançant el banner de configuració.</p>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {"particles":{"number":{"value":40},"color":{"value":"#00ffff"},"size":{"value":1},"line_linked":{"enable":true,"opacity":0.05},"move":{"speed":0.5}}});
+        const f = document.querySelector('.cursor-follower');
+        document.addEventListener('mousemove', (e) => { f.style.left = e.clientX + 'px'; f.style.top = e.clientY + 'px'; });
+    </script>
+</body>
+</html>

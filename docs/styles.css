@@ -1,126 +1,169 @@
 :root {
     --bg-dark: #050508;
     --primary-neon: #00ffff;
-    --secondary-neon: #7000ff;
     --font-cyber: 'Orbitron', sans-serif;
     --font-main: 'Rajdhani', sans-serif;
-    --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-/* --- RESET I CURSOR --- */
-* { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
+/* --- RESET I CAPES --- */
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: none !important; }
+body { background: var(--bg-dark); color: #fff; font-family: var(--font-main); overflow-x: hidden; line-height: 1.6; }
 
-body { 
-    background: var(--bg-dark); 
-    color: #fff; 
-    font-family: var(--font-main); 
-    overflow-x: hidden; 
+/* EL PUNTER SEMPRE A DALT */
+.cursor-follower { 
+    position: fixed; width: 35px; height: 35px; background: #fff; 
+    border-radius: 50%; pointer-events: none; z-index: 1000000; 
+    mix-blend-mode: difference; transform: translate(-50%, -50%); 
 }
 
-/* --- EFECTES DE DISSENY AGÈNCIA --- */
-.noise {
-    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    z-index: 9999; pointer-events: none; opacity: 0.06;
-    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+.noise { 
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    z-index: 999999; pointer-events: none; opacity: 0.05; 
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg'); 
 }
 
-.cursor-follower {
-    position: fixed; width: 35px; height: 35px;
-    background: #fff; border-radius: 50%;
-    pointer-events: none; z-index: 10000;
-    mix-blend-mode: difference; /* Efecte d'inversió de colors */
-    transform: translate(-50%, -50%);
-}
+#particles-js { position: fixed; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
 
-#particles-js {
-    position: fixed; width: 100%; height: 100%;
-    z-index: 1; background: var(--bg-dark);
-}
-
-.container { max-width: 1400px; margin: 0 auto; padding: 0 4rem; position: relative; z-index: 10; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 10; }
 
 /* --- HEADER --- */
-header {
-    position: fixed; top: 0; width: 100%; height: 90px;
-    background: rgba(5,5,8,0.7); backdrop-filter: blur(20px);
-    display: flex; align-items: center; z-index: 1000;
+header { 
+    position: fixed; top: 0; width: 100%; height: 90px; 
+    background: rgba(5, 5, 8, 0.8); backdrop-filter: blur(20px); 
+    z-index: 2000; display: flex; align-items: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
 }
-.logo-img { height: 45px; filter: drop-shadow(0 0 10px var(--primary-neon)); }
-
-/* --- HERO (TIPOGRAFIA MASSIVA) --- */
-.hero { height: 100vh; display: flex; align-items: center; justify-content: center; }
-.hero-title {
-    font-family: var(--font-cyber);
-    font-size: clamp(3rem, 15vw, 10rem);
-    font-weight: 700;
-    line-height: 0.85;
-    background: linear-gradient(to bottom, #fff 40%, var(--primary-neon));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -6px;
-    text-align: center;
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.logo-img { height: 40px; filter: drop-shadow(0 0 8px var(--primary-neon)); }
+.nav-links { display: flex; list-style: none; gap: 2.5rem; align-items: center; }
+.nav-item { 
+    text-decoration: none; color: #fff; font-family: var(--font-cyber); 
+    font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; 
+    transition: var(--transition); pointer-events: auto;
 }
+.nav-item:hover { color: var(--primary-neon); text-shadow: 0 0 10px var(--primary-neon); }
+.btn-nav-neon { border: 1px solid var(--primary-neon); padding: 0.5rem 1.2rem; }
 
-.subtitle { font-size: 1.8rem; color: #888; margin-top: 2rem; text-align: center; font-weight: 300; }
-
-/* --- GALERIA STORIES --- */
-#galeria { padding: 120px 0; }
-.gallery-container { position: relative; height: 500px; display: flex; justify-content: center; align-items: center; }
-.photo-card {
-    position: absolute; width: 260px; height: 340px;
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 12px; padding: 10px;
-    transform: translate(var(--x), var(--y)) rotate(var(--rot));
-    transition: var(--transition);
+/* --- ELEMENTS DE DISSENY --- */
+.glass { 
+    background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(30px); 
+    padding: 3rem; border: 1px solid rgba(255, 255, 255, 0.05); 
+    border-radius: 4px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
-.photo-card img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; grayscale: 100%; transition: 0.5s; }
+.text-accent-neon { color: var(--primary-neon); font-family: var(--font-cyber); text-transform: uppercase; }
+.section-title { font-family: var(--font-cyber); font-size: 2.5rem; margin-bottom: 2rem; letter-spacing: -1px; }
 
-.photo-card:hover { 
-    z-index: 100; 
-    transform: translate(var(--x), calc(var(--y) - 40px)) scale(1.15) rotate(0deg); 
-    border-color: var(--primary-neon);
-}
-.photo-card:hover img { grayscale: 0%; }
-
-/* --- BOTONS I FORMULARI --- */
-.btn-main {
-    display: inline-block; margin-top: 3rem; padding: 1.2rem 3.5rem;
-    border: 1px solid #fff; color: #fff; text-decoration: none;
-    font-family: var(--font-cyber); font-size: 0.75rem; letter-spacing: 3px;
-    transition: 0.3s;
-}
-.btn-main:hover { background: #fff; color: #000; }
-
-.glass { background: rgba(255,255,255,0.02); backdrop-filter: blur(30px); padding: 4rem; border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; }
-.section-title { font-family: var(--font-cyber); font-size: 3.5rem; text-align: center; margin-bottom: 3rem; letter-spacing: -2px; }
-
-input, textarea { 
-    width: 100%; background: transparent; border: none; 
-    border-bottom: 1px solid #333; padding: 1.2rem 0; 
-    color: #fff; font-size: 1.1rem; margin-bottom: 1rem;
-}
-input:focus, textarea:focus { outline: none; border-bottom-color: var(--primary-neon); }
-
-.btn-submit-neon {
-    width: 100%; padding: 1.5rem; background: transparent;
-    border: 1px solid var(--primary-neon); color: var(--primary-neon);
-    font-family: var(--font-cyber); font-weight: bold; cursor: none; transition: 0.3s; letter-spacing: 2px;
-}
-.btn-submit-neon:hover { background: var(--primary-neon); color: #000; }
-
-footer { text-align: center; padding: 4rem; color: #444; font-size: 0.8rem; letter-spacing: 2px; }
-
-/* SCAN LINE */
-.scan-line {
-    position: absolute; width: 100%; height: 2px;
-    background: rgba(0, 255, 255, 0.05); top: 0;
-    animation: scan 10s infinite linear; pointer-events: none;
-}
+/* --- HERO --- */
+.hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero-title { font-family: var(--font-cyber); font-size: clamp(3rem, 10vw, 7rem); line-height: 0.9; margin-bottom: 1rem; background: linear-gradient(to bottom, #fff, var(--primary-neon)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.scan-line { position: absolute; width: 100%; height: 2px; background: rgba(0, 255, 255, 0.1); top: 0; animation: scan 8s infinite linear; z-index: 5; }
 @keyframes scan { 0% { top: 0; } 100% { top: 100%; } }
 
-nav { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+/* --- FORMULARI --- */
+.contact { padding: 100px 0; }
+.form-group { margin-bottom: 1.5rem; text-align: left; }
+.form-group label { display: block; font-family: var(--font-cyber); font-size: 0.7rem; color: var(--primary-neon); margin-bottom: 0.5rem; }
+input, textarea { width: 100%; background: rgba(255,255,255,0.03); border: 1px solid #222; padding: 1rem; color: #fff; font-family: var(--font-main); font-size: 1.1rem; transition: var(--transition); }
+input:focus { outline: none; border-color: var(--primary-neon); background: rgba(0, 255, 255, 0.05); }
+
+.legal-checks { margin: 2rem 0; }
+.check-container { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 1rem; color: #888; font-size: 0.9rem; pointer-events: auto; }
+.check-container input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--primary-neon); }
+.inline-link { color: var(--primary-neon); text-decoration: none; border-bottom: 1px solid transparent; pointer-events: auto; }
+.inline-link:hover { border-bottom-color: var(--primary-neon); }
+
+.btn-submit-neon, .btn-main { 
+    width: 100%; padding: 1.2rem; background: transparent; border: 1px solid var(--primary-neon); 
+    color: var(--primary-neon); font-family: var(--font-cyber); font-weight: bold; 
+    letter-spacing: 2px; transition: var(--transition); pointer-events: auto; text-decoration: none; text-align: center; display: block;
+}
+.btn-submit-neon:hover, .btn-main:hover { background: var(--primary-neon); color: #000; box-shadow: 0 0 20px var(--primary-neon); }
+
+/* --- GALERIA D'IMATGES (RESTAURADA) --- */
+#galeria { 
+    padding: 100px 0; 
+    text-align: center; 
+}
+
+.gallery-container { 
+    position: relative; 
+    height: 500px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 4rem;
+}
+
+.photo-card { 
+    position: absolute; 
+    width: 260px; 
+    height: 340px; 
+    background: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 10px; 
+    /* Utilitza les variables --x, --y i --rot definides a l'HTML */
+    transform: translate(var(--x), var(--y)) rotate(var(--rot)); 
+    transition: var(--transition); 
+    pointer-events: auto; 
+}
+
+.photo-card img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    grayscale: 100%; 
+    transition: 0.5s ease; 
+    border-radius: 2px; 
+}
+
+/* EFECTE EN PASSAR EL RATOLÍ (HOVER) */
+.photo-card:hover { 
+    z-index: 100; 
+    /* Pugem la targeta i la posem recta */
+    transform: translate(var(--x), calc(var(--y) - 50px)) scale(1.15) rotate(0deg); 
+    border-color: var(--primary-neon); 
+    box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2); 
+}
+
+.photo-card:hover img { 
+    grayscale: 0%; 
+}
+
+/* AJUST PER A MÒBILS: Si la pantalla és petita, les apilem verticalment */
+@media (max-width: 768px) {
+    .gallery-container {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .photo-card {
+        position: relative;
+        transform: none !important;
+        width: 90%;
+        max-width: 300px;
+    }
+    .photo-card:hover {
+        transform: scale(1.05) !important;
+    }
+}
 
 
-.nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
-.nav-item { text-decoration: none; color: #fff; font-family: var(--font-cyber); font-size: 0.8rem; text-transform: uppercase; }
-.nav-item:hover { color: var(--primary-neon); text-shadow: 0 0 5px var(--primary-neon); }
+/* --- PÀGINES LEGALS --- */
+.legal-body { padding: 150px 0 100px; min-height: 100vh; }
+.legal-text h2 { color: var(--primary-neon); font-family: var(--font-cyber); font-size: 1.2rem; margin: 2rem 0 1rem; }
+.legal-text p { margin-bottom: 1rem; color: #ccc; font-size: 1.1rem; }
+.legal-text ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: #ccc; }
+
+/* --- COOKIE BANNER --- */
+.cookie-container { position: fixed; bottom: -100%; left: 50%; transform: translateX(-50%); width: 90%; max-width: 800px; z-index: 5000; padding: 2rem; border: 1px solid var(--primary-neon); transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+.cookie-container.show { bottom: 30px; }
+.cookie-actions { display: flex; gap: 1rem; margin-top: 1.5rem; }
+.btn-cookie-neon { background: var(--primary-neon); color: #000; border: none; padding: 0.8rem 2rem; font-family: var(--font-cyber); font-weight: bold; pointer-events: auto; }
+.btn-cookie-sec { background: transparent; color: #fff; border: 1px solid #444; padding: 0.8rem 2rem; font-family: var(--font-cyber); pointer-events: auto; }
+
+/* --- FOOTER --- */
+footer { padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
+.footer-link { color: #555; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); }
+.footer-link:hover { color: var(--primary-neon); }
