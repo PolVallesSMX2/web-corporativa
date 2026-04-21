@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8"><title>Avís Legal | FOODLOGISTIC</title>
+    <meta charset="UTF-8">
+    <title>Avís Legal | FOODLOGISTIC</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="legal-page-container">
     <div class="cursor-follower"></div><div class="noise"></div><div id="particles-js"></div>
-    <header><nav class="container nav-wrapper"><div class="logo"><a href="index.html"><img src="img/logo.png" alt="Logo" class="logo-img"></a></div><ul class="nav-links"><li><a href="index.html" class="nav-item">Tornar al Terminal</a></li></ul></nav></header>
-    <main class="legal-body container">
-        <div class="glass legal-text">
-            <h1 class="section-title">AVÍS <span class="text-accent-neon">LEGAL</span></h1>
-            <h2>1. Dades Identificatives</h2>
-            <p>En compliment de l'article 10 de la Llei 34/2002, de l'11 de juliol, de serveis de la societat de la informació i de comerç electrònic:</p>
+    <header>
+        <nav class="container nav-wrapper">
+            <div class="logo"><a href="index.html"><img src="img/logo.png" class="logo-img"></a></div>
+            <ul class="nav-links"><li><a href="index.html" class="nav-item">Tornar al Terminal</a></li></ul>
+        </nav>
+    </header>
+
+    <main class="container legal-page-container">
+        <div class="glass legal-content">
+            <h1 class="text-accent-neon">AVÍS LEGAL</h1>
+            <p>En compliment de la Llei 34/2002 (LSSI-CE), s'exposen les dades identificatives de l'entitat:</p>
+            
+            <h2>Identitat del Responsable</h2>
             <ul>
-                <li><strong>Titular:</strong> FOODLOGISTIC S.A.</li>
-                <li><strong>NIF:</strong> A-08123456</li>
-                <li><strong>Adreça:</strong> Carrer de la Tecnologia 42, 08302 Mataró.</li>
-                <li><strong>Registre:</strong> Mercantil de Barcelona, Tom 123, Foli 45, Full 678.</li>
+                <li><strong>Raó Social:</strong> FoodLogistic S.A.</li>
+                <li><strong>NIF:</strong> A08123456</li>
+                <li><strong>Adreça:</strong> Carrer de la Teixidora, núm. 13, 08302 Mataró (Barcelona).</li>
+                <li><strong>Telèfon:</strong> +34 935 55 55 55</li>
+                <li><strong>Email:</strong> info@foodlogistic.com</li>
             </ul>
-            <h2>2. Propietat Intel·lectual</h2>
-            <p>Tots els continguts d'aquesta interfície (codi, disseny, logotips) són propietat exclusiva de FoodLogistic S.A. Queda prohibida la reproducció total o parcial sense autorització expressa sota protocol de seguretat.</p>
+
+            <h2>Dades Registrals</h2>
+            <p>Societat inscrita al Registre Mercantil de Barcelona: Tom 45678, Foli 120, Full B-567890, Inscripció 1a.</p>
+
+            <a href="index.html" class="btn-main">ENTÈS I TORNAR</a>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS("particles-js", {"particles":{"number":{"value":40},"color":{"value":"#00ffff"},"size":{"value":1},"line_linked":{"enable":true,"opacity":0.05},"move":{"speed":0.5}}});
-        const follower = document.querySelector('.cursor-follower');
-        document.addEventListener('mousemove', (e) => { follower.style.left = e.clientX + 'px'; follower.style.top = e.clientY + 'px'; });
+        particlesJS("particles-js", {"particles":{"number":{"value":40},"color":{"value":"#00ffff"},"opacity":0.2,"line_linked":{"opacity":0.1},"move":{"speed":1}}});
+        const f = document.querySelector('.cursor-follower');
+        document.addEventListener('mousemove', (e) => { f.style.left = e.clientX + 'px'; f.style.top = e.clientY + 'px'; });
     </script>
 </body>
 </html>
