@@ -163,11 +163,11 @@ input:focus { outline: none; border-color: var(--primary-neon); background: rgba
 .btn-cookie-sec { background: transparent; color: #fff; border: 1px solid #444; padding: 0.8rem 2rem; font-family: var(--font-cyber); pointer-events: auto; }
 
 /* --- FOOTER --- */
-footer { padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+footer { padding: 4rem 0; border-top: 1px solid rgb(255, 255, 255); text-align: center; }
 .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
 
 /* --- ABANS --- 
-.footer-link { color: #555; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); } */
+.footer-link { color: #555; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); } 
 /* --- DESPUES --- */
 .footer-link { color: #fff; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); }
 
