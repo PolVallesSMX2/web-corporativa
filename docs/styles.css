@@ -165,5 +165,10 @@ input:focus { outline: none; border-color: var(--primary-neon); background: rgba
 /* --- FOOTER --- */
 footer { padding: 4rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
 .footer-links { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; }
-.footer-link { color: #555; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); }
+
+/* --- ABANS --- 
+.footer-link { color: #555; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); } */
+/* --- DESPUES --- */
+.footer-link { color: #fff; text-decoration: none; font-family: var(--font-cyber); font-size: 0.7rem; pointer-events: auto; transition: var(--transition); }
+
 .footer-link:hover { color: var(--primary-neon); }
